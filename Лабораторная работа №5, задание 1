@@ -1,0 +1,28 @@
+// Ввод размеров матрицы
+let M = parseInt(prompt('Введите количество строк матрицы: '));
+let N = parseInt(prompt('Введите количество столбцов матрицы: '));
+
+// Создание и заполнение исходной матрицы
+let matrix = [];
+for (let i = 0; i < M; i++) {
+  matrix.push([]);
+  for (let j = 0; j < N; j++) {
+    matrix[i].push(parseInt(prompt(`Введите элемент матрицы[${i+1}][${j+1}]: `)));
+  }
+}
+
+alert('Исходная матрица:');
+alert(matrix);
+
+// Создание и заполнение результирующей матрицы
+let productMatrix = [];
+for (let j = 0; j < N; j++) {
+  let product = 1;
+  for (let i = 0; i < M; i++) {
+    product *= matrix[i][j];
+  }
+  productMatrix.push(product);
+}
+
+alert('Результирующая матрица:');
+alert(productMatrix);
