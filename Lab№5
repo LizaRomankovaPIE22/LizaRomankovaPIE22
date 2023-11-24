@@ -1,0 +1,32 @@
+let size = parseInt(prompt("Введите порядок матрицы: "));
+
+let matrix = [];
+
+// Ввод матрицы с клавиатуры
+for (let i = 0; i < size; i++) {
+matrix.push([]);
+for (let j = 0; j < size; j++) {
+matrix[i].push(parseInt(prompt(`Введите элемент матрицы A[${i+1}][${j+1}]:  `)));
+}
+}
+
+alert("Исходная матрица:");
+for (let i = 0; i < size; i++) {
+alert(matrix[i].join(" "));
+}
+
+// Нахождение минимального элемента для каждой диагонали
+let mainDiagonalMin = matrix[0][0];
+let secondaryDiagonalMin = matrix[0][size - 1];
+
+for (let i = 1; i < size; i++) {
+if (matrix[i][i] < mainDiagonalMin) {
+mainDiagonalMin = matrix[i][i];
+}
+if (matrix[i][size - 1 - i] < secondaryDiagonalMin) {
+secondaryDiagonalMin = matrix[i][size - 1 - i];
+}
+}
+
+alert(`Минимальный элемент на главной диагонали: ${mainDiagonalMin}`);
+alert(`Минимальный элемент на побочной диагонали: ${secondaryDiagonalMin}`);
