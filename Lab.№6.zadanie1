@@ -1,0 +1,12 @@
+function calculatePerimeter(a, h) {
+    let side = Math.sqrt((a / 2) ** 2 + h ** 2); 
+     let perimeter = 2 * side + h; 
+     return perimeter;
+   }
+   let triangle1Perimeter = calculatePerimeter(4, 3); 
+   let triangle2Perimeter = calculatePerimeter(7, 5); 
+   let triangle3Perimeter = calculatePerimeter(10, 12); 
+   
+   console.log(triangle1Perimeter); 
+   console.log(triangle2Perimeter); 
+   console.log(triangle3Perimeter); 
