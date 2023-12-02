@@ -1,0 +1,27 @@
+function deleteLastPositiveRow(matrix) {
+  let lastRow = matrix[matrix.length - 1]; 
+  if (lastRow.every(elem => elem > 0)) {
+    matrix.pop();
+  }
+  return matrix;
+}
+function readValue(message) {
+  return +prompt(message);
+}
+function createMatrix(M, N) {
+  let matrix = [];
+  for (let i = 0; i < M; i++) {
+    let row = [];
+    for (let j = 0; j < N; j++) {
+      let value = readValue(`Введите элемент матрицы на позиции [${i+1}][${j+1}]:`);
+      row.push(value);
+    }
+    matrix.push(row);
+  }
+  return matrix;
+}
+let M = readValue("Введите количество строк в матрице:");
+let N = readValue("Введите количество столбцов в матрице:");
+let matrix = createMatrix(M, N);
+let newMatrix = deleteLastPositiveRow(matrix);
+console.log(newMatrix);
