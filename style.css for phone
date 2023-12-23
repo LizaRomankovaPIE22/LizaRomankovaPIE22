@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 100px;
+}
+
+.field {
+width: 500px;
+height: 500px;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+background-image: url(image/4.jpg);
+background-size: cover;
+margin-top: 100px;
+margin-left: 0px;
+}
+
+.excel {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.snakeBody {
+  background: url(image/darkbody.gif);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.head {
+  background: url(image/darkhead.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.mouse {
+  background: url(image/yoda.jpg);
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.input {
+  margin-left: 37%;
+  margin-top: 40px;
+  font-size: 30px;
+  display: block;
+}
