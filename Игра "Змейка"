@@ -65,7 +65,7 @@ let input = document.createElement('input');
 document.body.appendChild(input);
 input.style.cssText =`  
    margin-top: -560px; 
-   margin-left: 80px; 
+   margin-left: 570px; 
    font-size: 30px;  
    display: block `;
 
@@ -149,32 +149,4 @@ direction = 'down';
 steps = false;
 }
 }
-
 });
-document.getElementById('up').addEventListener('click', function() {
-    if (steps == true && direction != 'down') {
-      direction = 'up';
-      steps = false;
-    }
-  });
-  
-  document.getElementById('down').addEventListener('click', function() {
-    if (steps == true && direction != 'up') {
-      direction = 'down';
-      steps = false;
-    }
-  });
-  
-  document.getElementById('left').addEventListener('click', function() {
-    if (steps == true && direction != 'right') {
-      direction = 'left';
-      steps = false;
-    }
-  });
-  
-  document.getElementById('right').addEventListener('click', function() {
-    if (steps == true && direction != 'left') {
-      direction = 'right';
-      steps = false;
-    }
-  });
