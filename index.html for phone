@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Snake</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+  <button style="position: absolute; margin-top: 540px; margin-left: 260px; font-size: 60px;" id="up">▲</button>
+<button style="position: absolute; margin-top: 630px; margin-left: 260px; font-size: 60px;" id="down">▼</button>
+<button style="position: absolute; margin-top: 585px; margin-left: 185px; font-size: 60px;" id="left">◀</button>
+<button style="position: absolute; margin-top: 585px; margin-left: 334px; font-size: 60px;" id="right">▶</button>
+  <script src="game.js"></script> 
+</body> 
+</html>
